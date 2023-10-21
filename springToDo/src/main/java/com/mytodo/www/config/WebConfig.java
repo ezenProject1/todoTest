@@ -8,6 +8,8 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
 
+	
+	
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		//root-context.xml을 대신하는 클래스 설정 (RootConfig.class)

@@ -19,9 +19,14 @@ import com.zaxxer.hikari.HikariDataSource;
 @ComponentScan(basePackages = { "com.mytodo.www.service" })
 public class RootConfig {
 	
-	@Autowired
-	ApplicationContext applicationContext;
+	private ApplicationContext applicationContext;
 	
+	
+	@Autowired
+	public RootConfig(ApplicationContext applicationContext) {
+		this.applicationContext = applicationContext;
+	}
+
 	@Bean
 	public DataSource dataSource() {
 
