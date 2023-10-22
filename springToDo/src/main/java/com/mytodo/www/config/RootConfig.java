@@ -33,7 +33,7 @@ public class RootConfig {
 		HikariConfig hikariConfig = new HikariConfig();
 		// log4jdbc - log4j2의 드라이버 클래스 url을 사용
 		hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
-		hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/springdb");
+		hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/springtoy");
 		hikariConfig.setUsername("springUser");
 		hikariConfig.setPassword("mysql");
 

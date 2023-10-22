@@ -4,5 +4,34 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mytodo.www.repository.TodoDAO">
 	
+	<select id="getList" resultType="com.mytodo.www.domain.TodoVO">
+		select * from todo where isDel = 'N'
+	</select>
+
+	<insert id="insert">
+		insert into todo(writer, content) values(#{writer}, #{content})
+	</insert>
+
+	<update id="delete">
+		update todo set isDel = 'Y' where tno = #{tno}
+	</update>
+	
+	<update id="modify">
+		update todo set 
+		writer = #{writer}, content = #{content}, moddate = now()
+		where tno = #{tno}
+	</update>
+	
+	
+	<!-- 휴지톻 기능  -->
+	
+	<select id="AllList" resultType="com.mytodo.www.domain.TodoVO">
+		select * from todo
+	</select>
+	
+	<update id="restore">
+		update todo set isDel = 'N' where tno = #{tno}
+	</update>
+	
 
 </mapper>
