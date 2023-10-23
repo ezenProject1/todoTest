@@ -68,7 +68,6 @@ public class TodoController {
 		
 		return "redirect:/todo/recycle";
 	}
-	public void kim() {
 
 	
 	
