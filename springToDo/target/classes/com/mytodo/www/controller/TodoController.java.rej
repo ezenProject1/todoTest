@@ -1,0 +1,9 @@
+diff a/springToDo/src/main/java/com/mytodo/www/controller/TodoController.java b/springToDo/src/main/java/com/mytodo/www/controller/TodoController.java	(rejected hunks)
+@@ -68,7 +68,6 @@
+ 		
+ 		return "redirect:/todo/recycle";
+ 	}
+-	public void kim() {
+ 
+ 	
+ 	
