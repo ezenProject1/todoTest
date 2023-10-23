@@ -72,6 +72,9 @@ public class TodoController {
 	public void test() {
 		
 	}
+	public void test2() {
+		
+	}
 	
 	
 }
